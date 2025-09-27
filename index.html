@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verde Encanto - Os melhores presentes!</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="./styles/output.css" />
+</head>
+<body class="font-['Roboto']">
+
+  <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center flex flex-col justify-center items-center text-white">
+    <img src="./assets/encanto.png" alt="Logo" class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200" />
+    <h1 class="text-4xl mt-4 mb-2 font-bold">Verde Encanto</h1>
+    <span>Não-Me-Toque - RS</span>
+    <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+      <span>Seg à Dom - 18:00 às 22:00</span>
+    </div>
+  </header>
+
+  <h2 class="text-3xl font-bold text-center mt-9 mb-6">Conheça nossas plantas</h2>
+
+  <main class="grid grid-cols-1 md:grid-cols-2 gap-7 mx-auto max-w-7xl px-2 mb-16" id="menu">
+   
+
+  
+   <!-- Produto 1 -->
+   <div class="flex gap-2">
+      <img src="assets/plant-1.png" alt="Cacto" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+      <div>
+        <p class="font-bold">Cacto</p>
+        <p class="text-sm">Cacto em vaso decorado.</p>
+        <div class="flex items-center gap-2 justify-between mt-3">
+          <p class="font-bold text-lg">R$ 30</p>
+          <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Cacto" data-price="30">
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+   <!-- Produto 2 -->
+    <div class="flex gap-2">
+      <img src="assets/plant-2.png" alt="Suculenta" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+      <div>
+        <p class="font-bold">Suculentas</p>
+        <p class="text-sm">Vaso decorado com 3 suculentas e plaquinha personalizada.</p>
+        <div class="flex items-center gap-2 justify-between mt-3">
+          <p class="font-bold text-lg">R$30.00</p>
+          <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Suculenta" data-price="30">
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produto 3 -->
+    <div class="flex gap-2">
+      <img src="assets/plant-3.png" alt="Echevaria" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+      <div>
+        <p class="font-bold">Echevaria</p>
+        <p class="text-sm">Vaso premium com plaquinha</p>
+        <div class="flex items-center gap-2 justify-between mt-3">
+          <p class="font-bold text-lg">R$ 25</p>
+          <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Echevaria" data-price="25">
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produto 4 -->
+    <div class="flex gap-2">
+      <img src="assets/plant-4.png" alt=" Echevaria" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+      <div>
+        <p class="font-bold"> Echevaria Elegans</p>
+        <p class="text-sm">Vaso premium com plaquinha .</p>
+        <div class="flex items-center gap-2 justify-between mt-3">
+          <p class="font-bold text-lg">R$ 25</p>
+          <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name=" Echevaria Elegans" data-price="25">
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+
+
+   <!-- Produto 5 -->
+    <div class="flex gap-2">
+      <img src="assets/plant-5.png" alt="Suculenta" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+      <div>
+        <p class="font-bold">Sedum Dourado</p>
+        <p class="text-sm">Vaso decorado com plaquinha personalizada.</p>
+        <div class="flex items-center gap-2 justify-between mt-3">
+          <p class="font-bold text-lg">R$ 25</p>
+          <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Sedum dourado" data-price="25">
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produto 6 -->
+    <div class="flex gap-2">
+      <img src="assets/plant-6.png" alt="Suculenta Roxa" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+      <div>
+        <p class="font-bold">Echevaria Melaco</p>
+        <p class="text-sm">Em vaso decorado com plaquinha.</p>
+        <div class="flex items-center gap-2 justify-between mt-3">
+          <p class="font-bold text-lg">R$20</p>
+          <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Echevaria Melaco" data-price="20">
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produto 7 -->
+    <div class="flex gap-2">
+      <img src="assets/plant-7.png" alt="Rosa do deserto" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+      <div>
+        <p class="font-bold">Rosa do deserto</p>
+        <p class="text-sm">Vaso premium com plaquinha.</p>
+        <div class="flex items-center gap-2 justify-between mt-3">
+          <p class="font-bold text-lg">R$25</p>
+          <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Rosa do deserto" data-price="25">
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+ 
+
+
+
+   <!-- Produto 8 -->
+    <div class="flex gap-2">
+      <img src="assets/plant-8.png" alt="Dedinho-de-moça" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+      <div>
+        <p class="font-bold">Dedinho-de-moça</p>
+        <p class="text-sm">Vaso decorado com pedrinhas.</p>
+        <div class="flex items-center gap-2 justify-between mt-3">
+          <p class="font-bold text-lg">R$ 15</p>
+          <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Dedinho-de-moça" data-price="15">
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+   
+    <!-- Produto 9-->
+    <div class="flex gap-2">
+      <img src="assets/plant-10.png" alt="mini cacto" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+      <div>
+        <p class="font-bold">mini cacto</p>
+        <p class="text-sm">Vaso pequeno com cacto.</p>
+        <div class="flex items-center gap-2 justify-between mt-3">
+          <p class="font-bold text-lg">R$5</p>
+          <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="mini cacto" data-price="5">
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+      
+
+
+
+
+  
+
+    <!-- Produto 10 -->
+    <div class="flex gap-2">
+      <img src="assets/plant-13.png" alt="Echevaria Elegans" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+      <div>
+        <p class="font-bold">Echevaria Elegans</p>
+        <p class="text-sm">Vaso premium com plaquinha.</p>
+        <div class="flex items-center gap-2 justify-between mt-3">
+          <p class="font-bold text-lg">R$20</p>
+          <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Echevaria Elegans" data-price="20">
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+  </main>
+
+
+<!--corrija daqui -->
+<h2 class="text-3xl font-bold text-center mt-9 mb-6">Mel puro e natural</h2>
+<main class="grid grid-cols-1 md:grid-cols-2 gap-7 mx-auto max-w-7xl px-2 mb-16" id="menu-mel">
+
+  <!-- Produto Mel 500ml -->
+  <div class="flex gap-2 category-item mel">
+    <img src="assets/mel-500.png" alt="Mel Puro 500ml" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+    <div>
+      <h3 class="font-bold">Mel Puro 500ml</h3>
+      <p class="text-sm">Frasco de 500ml de mel natural.</p>
+      <div class="flex items-center gap-2 justify-between mt-3">
+        <p class="font-bold text-lg">R$ 25,00</p>
+        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Mel Puro 500ml" data-price="25">
+          <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produto Mel 300ml -->
+  <div class="flex gap-2 category-item mel">
+    <img src="assets/mel-300.png" alt="Mel Puro 300ml" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+    <div>
+      <h3 class="font-bold">Mel Puro 300ml</h3>
+      <p class="text-sm">Frasco de 300ml de mel natural.</p>
+      <div class="flex items-center gap-2 justify-between mt-3">
+        <p class="font-bold text-lg">R$ 20,00</p>
+        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Mel Puro 300ml" data-price="20">
+          <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+</main>
+<!--até aqui -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Modal Carrinho -->
+  <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-50 items-center justify-center hidden" id="cart-modal">
+    <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+      <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+      <div id="cart-items" class="flex flex-col mb-2 gap-4"></div>
+      <p class="font-bold">Total: R$ <span id="cart-total">0.00</span></p>
+      <p class="font-bold mt-4">Endereço de entrega:</p>
+      <input type="text" id="address" placeholder="Digite seu endereço completo" class="w-full border-2 p-1 rounded my-1" />
+      <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo</p>
+      <div class="flex items-center justify-between mt-5">
+        <button id="close-modal-btn">Fechar</button>
+        <button id="checkout-btn" class="bg-green-600 text-white px-4 py-1 rounded">Finalizar pedido</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="w-full bg-green-600 py-2 fixed bottom-0 z-40 flex items-center justify-center">
+    <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+      (<span id="cart-cont">0</span>) Ver carrinho <i class="fa fa-cart-plus text-lg text-white"></i>
+    </button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
