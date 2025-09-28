@@ -98,7 +98,7 @@ checkoutBtn.addEventListener("click", () => {
   message += `Total: R$ ${parseFloat(cartTotal.textContent).toFixed(2)}%0A`;
   message += `Endereço: ${address}`;
 
-  const phone = "51999409577"; // Exemplo: 5551999999999
+  const phone = "5199409577"; // Exemplo: 5551999999999
   const url = `https://wa.me/${phone}?text=${message}`;
 
   window.open(url, "_blank");
