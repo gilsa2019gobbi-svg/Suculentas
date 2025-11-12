@@ -11,14 +11,32 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="./styles/output.css" />
 </head>
+
+
+
+
 <body class="font-['Roboto']">
+
+
+<!-- Barra superior com ícone de cadastro -->
+<nav class="fixed top-5 right-5 z-50 group">
+  <a href="login.html"
+     class="flex items-center gap-4 bg-green-600 text-white px-8 py-4 text-xl rounded-full shadow-2xl hover:bg-green-700 hover:scale-105 hover:shadow-green-500/50 duration-300">
+    <img src="img/password.png" alt="Ícone de cadastro" class="w-10 h-10">
+    <span class="font-bold tracking-wide">Cadastre-se</span>
+  </a>
+</nav>
+
+
+
+
 
   <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center flex flex-col justify-center items-center text-white">
     <img src="./assets/encanto.png" alt="Logo" class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200" />
     <h1 class="text-4xl mt-4 mb-2 font-bold">Verde Encanto</h1>
     <span>Não-Me-Toque - RS</span>
     <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
-      <span>Seg à Dom - 18:00 às 22:00</span>
+      <span>Seg à sex - 05:00 às 22:00</span>
     </div>
   </header>
 
@@ -195,7 +213,7 @@
   </main>
 
 
-<!--corrija daqui -->
+
 <h2 class="text-3xl font-bold text-center mt-9 mb-6">Mel puro e natural</h2>
 <main class="grid grid-cols-1 md:grid-cols-2 gap-7 mx-auto max-w-7xl px-2 mb-16" id="menu-mel">
 
@@ -229,8 +247,12 @@
     </div>
   </div>
 
+
+
+
+  
 </main>
-<!--até aqui -->
+
 
 
 
@@ -260,13 +282,100 @@
     </div>
   </div>
 
-  <!-- Rodapé -->
-  <footer class="w-full bg-green-600 py-2 fixed bottom-0 z-40 flex items-center justify-center">
-    <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
-      (<span id="cart-cont">0</span>) Ver carrinho <i class="fa fa-cart-plus text-lg text-white"></i>
-    </button>
-  </footer>
+  <!-- === BOTÃO FIXO DO CARRINHO === -->
+<footer class="w-full bg-green-600 py-2 fixed bottom-0 z-40 flex items-center justify-center shadow-lg">
+  <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+    (<span id="cart-cont">0</span>) Ver carrinho 
+    <i class="fa fa-cart-plus text-lg text-white"></i>
+  </button>
+</footer>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
+
+<!-- === SEÇÃO DE NEWSLETTER === -->
+<section class="bg-green-600 text-white py-6 px-6 flex flex-col md:flex-row justify-between items-center gap-4 mt-10">
+  <div class="flex items-center gap-3 text-2xl font-semibold">
+    <i class="fa fa-envelope text-3xl"></i>
+    <span>Cadastre-se para receber nossas ofertas!</span>
+  </div>
+
+  <form id="newsletter-form" class="flex gap-2">
+    <input type="email" id="email" name="email" required
+           placeholder="Digite seu email"
+           class="px-4 py-2 rounded-md text-gray-800 w-64 focus:outline-none focus:ring-2 focus:ring-green-300">
+    <button type="submit"
+            class="bg-green-700 px-4 py-2 rounded-md hover:bg-green-800 active:scale-95 transition font-semibold">
+      Cadastrar
+    </button>
+  </form>
+</section>
+
+<!-- === RODAPÉ FINAL === -->
+<footer class="bg-white text-gray-800 py-12 px-8 md:px-20 border-t-4 border-green-600">
+  <div class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-10 text-center md:text-left">
+
+    <!-- Atendimento -->
+    <div>
+      <h3 class="font-bold text-xl mb-4 text-green-700">Atendimento</h3>
+      <p class="flex items-center justify-center md:justify-start gap-2">
+        <i class="fab fa-whatsapp text-green-500 text-2xl"></i>
+        <span><strong>Whatsapp:</strong><br> (51) 99940-9577</span>
+      </p>
+      <p class="mt-3 flex items-center justify-center md:justify-start gap-2">
+        <i class="fa fa-envelope text-green-500 text-2xl"></i>
+        <span><strong>E-mail:</strong><br> contato@verdeencantors.com.br</span>
+      </p>
+      <p class="mt-3 flex items-center justify-center md:justify-start gap-2">
+        <i class="fa fa-clock text-green-500 text-2xl"></i>
+        <span><strong>Horário:</strong><br> Seg a Sex, 05h às 22h</span>
+      </p>
+    </div>
+
+  
+    <!-- Dicas de Cultivo -->
+<div>
+  <h3 class="font-bold text-lg mb-3">Dicas de Cultivo 🌱</h3>
+  <ul class="space-y-2">
+    <li><a href="dicas-suculentas.html" class="hover:text-green-600">Cuidados com Suculentas</a></li>
+    <li><a href="dicas-cactos.html" class="hover:text-green-600">Como Cuidar dos Cactos</a></li>
+</div>
+
+
+    <!-- Institucional -->
+    <div>
+      <h3 class="font-bold text-xl mb-4 text-green-700">Institucional</h3>
+      <ul class="space-y-2">
+       <li><a href="sobre.html" class="hover:text-green-600">Sobre Nós</a></li>
+
+      </ul>
+    </div>
+
+    <!-- Redes sociais -->
+    <div class="flex flex-col items-center md:items-start">
+      <h3 class="font-bold text-xl mb-4 text-green-700 flex items-center gap-2">
+    
+        Nossas redes 
+      </h3>
+      <div class="flex gap-4 text-3xl text-gray-700 justify-center md:justify-start">
+        <a href="https://www.instagram.com/verdeencanto.rs?igsh=MTFsd2tneHBrbHNxbg==" 
+           target="_blank" 
+           class="hover:text-green-600 transition-transform duration-300 hover:scale-110">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/5551999409577" 
+           target="_blank" 
+           class="hover:text-green-600 transition-transform duration-300 hover:scale-110">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="mt-10 text-center text-gray-500 text-sm border-t border-gray-200 pt-4">
+    © 2025 <strong>Verde Encanto RS</strong> — Todos os direitos reservados 🌿
+  </div>
+</footer>
+
 </body>
 </html>
